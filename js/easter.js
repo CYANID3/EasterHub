@@ -13,6 +13,9 @@ document.addEventListener('DOMContentLoaded', function() {
     ];
 
     let inputCode = [];
+    let audio = new Audio();
+    audio.src = "./music/ntro_music.mp3";
+    audio.preload = 'auto';
 
     document.addEventListener('keydown', function(e) {
     inputCode.push(e.code);
@@ -22,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         if (inputCode.toString() === secretCode.toString()) {
+            audio.play();
             let hiddenText = document.createElement('div');
             hiddenText.textContent = "Хуй соси";
             document.querySelector(".content").appendChild(hiddenText);
