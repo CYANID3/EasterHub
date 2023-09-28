@@ -26,10 +26,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (inputCode.toString() === secretCode.toString()) {
             audio.play();
-            let hiddenText = document.createElement('div');
-            hiddenText.textContent = "Хуй соси";
-            document.querySelector(".content").appendChild(hiddenText);
-
+            let hiddenText = document.querySelector('.content__text');
+            hiddenText.textContent = "You find an easter egg";
             inputCode = [];
         }
     });
