@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (inputCode.toString() === secretCode.toString()) {
 
       let hiddenText = document.querySelector(".content__text");
-      hiddenText.textContent = "You find an easter egg"
+      hiddenText.textContent = "You find an easter egg!"
 
       // После выполнения действий очищаем массив inputCode   
       inputCode = [];
